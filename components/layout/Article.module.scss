@@ -1,0 +1,33 @@
+.article {
+    margin-block: var(--space-m);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m);
+    min-width: 0;
+    max-width: var(--content);
+
+    &_content {
+        --block-space: var(--space-s);
+
+        >*+ {
+            * {
+                margin-top: var(--block-space)
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                --block-space: 1em;
+            }
+        }
+
+        >div {
+            --block-space: var(--space-xl);
+            margin-bottom: var(--block-space);
+        }
+    }
+}
