@@ -6,6 +6,7 @@ import css from './page.module.scss';
 import { SocialLinks, SocialLink } from '@/components/SocialLinks/SocialLinks';
 import { faFacebook } from "@fortawesome/free-brands-svg-icons/faFacebook"
 import { faInstagram } from "@fortawesome/free-brands-svg-icons/faInstagram"
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -30,7 +31,11 @@ export default function Home() {
             <SocialLink href='https://www.facebook.com/groups/lancashiremx5' icon={faFacebook} >Facebook</SocialLink>
             <SocialLink href='https://www.instagram.com/lancashire_mazda_mx5_owners/' icon={faInstagram} >Instagram</SocialLink>
           </SocialLinks>
+          <div className={css.center}>
+            <Link className={css.link} href={"https://www.thehoodyclub.co.uk/mx5-owners"}>Merch</Link>
+          </div>
         </Article>
+
       </Container >
     </>
   );

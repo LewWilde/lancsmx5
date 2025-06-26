@@ -1,3 +1,15 @@
 .center {
     text-align: center;
 }
+
+.link {
+    color: var(--color-grey-800);
+
+    &:visited {
+        color: var(--color-grey-800);
+    }
+
+    &:hover {
+        color: var(--color-grey-800)
+    }
+}
